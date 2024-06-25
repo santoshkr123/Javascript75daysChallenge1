@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Day19-23AdminLayout.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="Day19-23AdminLayout.css">
+</head>
+<body>
+    <div id="container">
+        <div id="sidenav">
+            <div id="sidenav-menu">
+                <button id="register-btn" onclick="tab('register-btn','signin-btn','register','signin')">Register</button>
+                <button id="signin-btn" onclick="tab('signin-btn','register-btn','signin','register')">SignIn</button>
+
+            </div>
+        </div>
+        <div id="section">
+            <nav id="topnav">
+                <div id="toolbar">
+                    <button onclick="toggle()" id="toggler">
+                        <i class="fa- fa-bars"></i>
+                        
+                    </button>
+                    <h1 id="brand-name">Coding Ott</h1>
+                </div>
+               
+            </nav>
+            <div id="content">
+                <div id="register">
+                    <h1>Register</h1>
+                    
+                    <div id="card" class="animate__animated animate__fadeIn">
+                    <form name="signupForm" onsubmit="signup(event)" autocomplete="off">
+                             <input name="fullname" placeholder="FullName" type="text" oninput="onInputvalidation(this,'fullname-message')"/>
+                             <p id="fullname-message"></p>
+                             <input name="email" placeholder="Email" type="email" oninput="onInputvalidation(this,'email-message')"/>
+                             <p id="email-message"></p>
+                            <div id= "password-container">
+                             <input name="signup-password" placeholder="*********" type="password" oninput="onInputvalidation(this,'password-message')" />
+                             <button type="button" onclick="togglePassword('signup-password','signup-toggle-icon')">
+                                <i class="fa fa-eye" id="signup-toggle-icon"></i>
+                             </button>
+                             </div>
+                             <p id="password-message"></p>
+                             <button type="submit">Register Now</button>
+                             </form>
+                    </div>
+                </div>
+
+                <div id="signin">
+                    <h1>SignIn</h1>
+                      
+                    <div id="card" class="animate__animated animate__fadeIn">
+                        <form name="loginForm" onsubmit="login(event)">
+                        
+                                 <input name="email" placeholder="Email" type="email" oninput="onInputvalidation(this,'login-email-message')"/>
+                                 <p id="login-email-message"></p>
+                                 <div id= "password-container">
+                                    <input name="login-password" placeholder="*********" type="password" oninput="onInputvalidation(this,'login-password-message')" />
+                                    <button type="button" onclick="TogglePassword('login-password','login-toggle-icon')">
+                                       <i class="fa fa-eye" id="login-toggle-icon"></i>
+                                    </button>
+                                    </div>
+                                    <p id="login-password-message"></p>
+                                 <button type="submit">Login</button>
+                                 </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+</body>
+</html>

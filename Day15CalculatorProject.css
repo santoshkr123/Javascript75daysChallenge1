@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+}
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#alert{
+    margin: 0;
+    padding: 0;
+}
+#card {
+    width: 350px;
+    background-color: white;
+    box-shadow: 0  0 10px 0 #ddd;
+    border-top: 60px solid red;
+    border-bottom: 15px solid  red;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+    
+}
+#title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #323232;
+    text-align: center;
+}
+#result {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 4px;
+}
+#calc-box {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#cal-btn {
+    border: none;
+    font-size: 18px;
+    padding: 14px 20px;
+    border-radius: 4px;
+    background-color: #323232;
+    color: white;
+    width:calc(25% - 16px);
+}
+#cal-btn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}

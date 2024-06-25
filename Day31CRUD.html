@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="Day31CRUD.css">
+    <script src="Day31CRUD.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <h1 id="title">Marksheet Creator</h1>
+    <div id="form-card" class="animate__animated animate__slideInLeft">
+      <form id="marksheet-form">
+        <div id="horizontal">
+
+          
+          
+          <div id="form-group">
+            <label>School Logo</label>
+            <input name="school-logo"  type="file" accept="image/*" id="school-logo-input" />
+          </div>
+
+          <div id="form-group">
+            <label>School Name</label>
+            <input name="schoolName" placeholder="Wap School" type="text" id="school-name-input"/>
+          </div>
+
+        <div id="form-group">
+          <label>TagLine</label>
+          <input name="FatherName" placeholder="fatherName" type="text" id="tagline"/>
+          </div>
+
+        </div>
+
+        <div id="horizontal">
+
+          
+          
+          <div id="form-group">
+            <label>Candidate's Image</label>
+            <input name="school-logo"  type="file" accept="image/*" id="school-logo-input" />
+          </div>
+
+          <div id="form-group">
+            <label>Candidate's Name</label>
+            <input name="schoolName" placeholder="Wap School" type="text" id="school-name-input"/>
+          </div>
+
+        <div id="form-group">
+          <label>Father's Name</label>
+          <input name="FatherName" placeholder="fatherName" type="text" id="tagline"/>
+          </div>
+
+        </div>
+
+
+        <div id="horizontal">
+
+          
+          
+          <div id="form-group">
+            <label>DOB</label>
+            <input name="dob"  type="date" accept="image/*" id="student-pic-input" />
+          </div>
+
+          <div id="form-group">
+            <label>Gender</label>
+            <select id="gender" id="choose-gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">others</option>
+            </select>
+          </div>
+
+        <div id="form-group">
+          <label>Class</label>
+          <input name="class" placeholder="6" type="number" id="class-input"/>
+          </div>
+
+          <div id="form-group">
+            <label>Roll</label>
+            <input name="roll" placeholder="6" type="number" id="roll-input"/>
+            </div>
+
+        </div>
+        <button id="add-subjects" type="button">
+          <i class="fa fa-plus"></i>
+          Add Subject
+        </button>
+
+        <div id="dynamic-area">
+
+        </div>
+        <button id="generate">
+          <i class="fa fa-download"></i>
+          Generate Yor Marksheet Now</button>
+
+        </form>
+
+        <table width="100%">
+          <tr>
+            <th width="150">
+             <img src="avatar.jpg" width="100%" id="school-logo"/>
+            </th>
+          <td align="center">
+            <h1 id="school-name">CodingOtt School</h1>
+            <span id="tagline-text">A wap Institute subsidiary Organisation | ESTD 2017 As Coding Organisation</span>
+          </td>
+          </tr>
+
+        </table>
+
+        <table width="100%">
+          <tr>
+            <th width="150">
+            <img src="avatar.jpg" width="100%" id="student-pic"/>
+            </th>
+          <td>
+            <table border="1" width="100%">
+              <tr>
+                <th width="200">Student's Name</th>
+                <td id="candidate-name">Er saurav</td>
+                <th width="200">Father'Name</th>
+                <td id="father-name">Mr Raj</td>
+              </tr>
+
+              <tr>
+                <th width="200">DOB</th>
+                <td id="dob">00-00-0000</td>
+                <th width="200">Gender</th>
+                <td id="gender">Male</td>
+              </tr>
+
+              <tr>
+                <th width="200">Class</th>
+                <td id="class">4th</td>
+                <th width="200">Roll</th>
+                <td id="roll">12</td>
+              </tr>
+
+            </table>
+          </td>
+          
+            
+          </td>
+          </tr>
+
+        </table>
+
+        <table width ="100%">
+          <tr>
+            <th colspan="3">Subjects</th>
+            <th>Fullmarks</th>
+            <th colspan="2">Obtained</th>
+          </tr>
+
+          <tr>
+            <th colspan="3">English</th>
+            <th>100</th>
+            <td colspan="2">89</td>
+          </tr>
+
+         
+
+         <tr>
+          <th colspan="2" align="right">Total Marks</th>
+          <td align="center">859</td>
+         </tr>
+
+         <tr>
+          <th colspan="2" align="right">Grade</th>
+          <td>A+</td>
+          <th colspan="2" align="right">Percentage</th>
+          <td align="center">859</td>
+         </tr>
+
+        </table>
+
+        <div id="subject-list">
+
+        </div>
+
+
+       
+        
+
+
+        
+    </div>
+  </div>
+    
+</body>
+</html>

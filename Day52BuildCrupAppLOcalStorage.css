@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #ddd;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 75%;
+    min-height: 100vh;
+    background: white;
+    margin: 0 auto;
+    padding: 0 32px;
+   
+}
+
+#title-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#title-box h1 {
+    margin-bottom: 0;
+}
+
+#add-btn {
+    border: none;
+    background: orangered;
+    color: white;
+    padding: 16px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#student-table {
+    width: 100%;
+    margin-top: 16px;
+}
+
+#delete-btn ,#edit-btn {
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#edit-btn {
+    background: dodgerblue;
+    color: white;
+    margin-right: 8px;
+    
+}
+
+#delete-btn {
+    background: orange;
+    color: white;
+}
+
+#student-table td {
+    border-collapse: collapse;
+}
+#student-table td {
+    text-align: center;
+    padding: 16px 0;
+    text-transform: capitalize;
+    
+}
+
+#student-table th {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+
+}
+
+#student-table tr:nth-child(even){
+    background: #f5f5f5;
+}
+
+#student-form,#edit-student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#form-group input {
+    width: 100% ;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+}
+
+#submit-btn {
+    border: none;
+    padding: 12px 24px;
+    background: blueviolet;
+    font-size: 18px;
+    color: white;
+}
+
+#save-btn {
+    border: none;
+    padding: 12px 24px;
+    background: deeppink;
+    font-size: 18px;
+    color: white;
+}

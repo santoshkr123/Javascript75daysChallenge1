@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    
+    height: 100vh;
+    display: flex;
+}
+#section {
+    width: 500px;
+    height: 100%;
+    background-color:#FCE5CD;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidenav {
+    width:250px;
+    height: 100%;
+    background: #f7d7b5;
+}
+
+#title {
+    color: #351C75;
+    font-family:sans-serif;
+    font-size: 80px;
+}
+
+#desc {
+    color: #E69138;
+    font-family: verdana;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+} 
+
+#sidenav h4 {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#menu-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}

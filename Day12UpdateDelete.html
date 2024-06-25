@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Day2UpdateDelete.js1"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Day12UpdateDelete.css">
+</head>
+<body>
+    <div id="container">
+    <div id="card" class="animate__animated animate__pulse animate__infinite animate__faster">
+        <h1>Register Now</h1>
+        <form id="signup" autocomplete="off" onsubmit="signup(event)"  name="register">
+            <input type="text"  placeholder="FirstName" name="firstName" required="true" id="firstName"/>
+            <input type="text" placeholder="LastName" name="lastName" required="true" id="lastName"/>
+            <input type="email"  placeholder="Email" name="email" required="true" id="email"/>
+            <input type="password" placeholder="Password"  name="password" required="true" id="password"/>
+            <button>Submit</button>
+            </form>
+            </div>
+            </div>
+            <div id="modal" class="animate__animated animate__fadeIn">
+                <div id="modal-body" class="animate__animated animate__zoomIn">
+                    <button id="close-btn" onclick="closeMdal()">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                    <i class="fa fa-check-circle" id="check-icon"></i>
+                    <h1 id="check-title">Register Success</h1>
+                </div>
+            </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Day28DynamicElements.css">
+    <script src="Day28DynamicElements.js"></script>
+</head>
+<body>
+    <!--
+    <button onclick="create()">Create</button>
+    -->
+    <div id="container">
+        <div id="sidenav">
+            <div id="element-card">
+            <h1>Element Creater</h1>
+            <form onsubmit="elementCreater(event)" name="element-form">
+                <select name="Element" id="">
+                    <option value="h1">h1</option>
+                    <option value="p">Paragraph</option>
+                    <option value="div">Div Tag</option>
+                </select>
+                <input name="text" type="text" placeholder="Enter your text" required="true"/>
+                <button>Create</button>
+            </form>
+        </div>
+        </div>
+        <div id="section">
+            <div>
+                <h1>Element Preview</h1>
+                <div id="result"></div>
+
+            </div>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/*.demo {
+    color:red;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.radius {
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+}
+*/
+.hide{
+    display: none;
+}
+.show {
+    display: block;
+}

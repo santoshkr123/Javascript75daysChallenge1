@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#page{
+    display:flex;
+    background-color: #ddd;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 350px;
+    background-color: white;
+    padding: 32px 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: sans-serif;
+    color: #323232;
+}
+
+#input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top:4px ;
+}
+
+button {
+    border: none;
+    background: deepskyblue;
+    color: white;
+    padding: 8px 0;
+
+    
+}
+
+#rem {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

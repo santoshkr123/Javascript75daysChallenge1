@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#loader{
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    
+}
+
+#container{
+    width: 75%;
+    margin: 0 auto;
+    background: #ddd;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    gap: 32px;
+
+
+}
+.card{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    gap: 24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 24px;
+    padding: 24px 0;
+}
+
+form input{
+    padding: 16px;
+}
+
+form button{
+    padding: 16px;
+    border: none;
+    background-color: darkgoldenrod;
+    font-size: 18px;
+}
+.edit-btn{
+    border:none;
+    padding: 12px 32px;
+    margin-left: 16px ;
+    background-color: greenyellow;
+}

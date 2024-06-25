@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    height: 100vh;
+
+}
+
+#sidenav {
+    position: fixed;
+    width:350px;
+    height: 100%;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+    
+}
+
+#section {
+    margin-left: 350px;
+    height: 100vh;
+    display: flex;
+
+}
+
+#element-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#element-card h1 {
+    font-family: sans-serif;
+    color:white;
+}
+
+#element-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#element-card form select , #element-card form input ,#element-card form button {
+    padding: 12px;
+    border: none;
+}
+
+#element-card form button {
+    width: fit-content;
+    padding-left:20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    background: darkorange;
+    color:white;
+    font-weight: bold;
+}

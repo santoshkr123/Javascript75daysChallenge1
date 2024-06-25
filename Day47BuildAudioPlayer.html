@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="Day47BuildAudioPlayer.css">
+    <script src="Day47BuildAudioPlayer.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="player">
+            <div id="upload-container">
+                <img src="Music-Themed.jpg" width="100%" id="bg"/>
+                <input type="file" accept="audio/*" id="upload-input"/>
+
+            </div>
+
+            <div id="content">
+                <marquee>
+                    <h1 id="title">Introduction to HTML</h1>
+
+                </marquee>
+                
+                <p id="size">Size : 00.0 Mb</p>
+                <div id="progress-info">
+                    <span id="current-duration">00:00</span>
+                    <div id="progress">
+                        <div id="progress-bar">
+
+                        </div>
+
+                    </div>
+                    <span id="full-duration">00:00</span>
+                </div>
+                <div id="controls">
+                    <button id="mute-btn" disabled="true" class="toolbaar">
+                        <i class="ri-volume-up-line" class="mute-icon"></i>
+                    </button>
+                    <button id="backward-btn" disabled="true" class="toolbaar">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <button id="play-btn" disabled="true" class="toolbaar">
+                        <i class="ri-play-fill" id="play-icon"></i>
+                    <button id="forward-btn" disabled="true" class="toolbaar">
+                        <i class="ri-arrow-right-s-fill"></i>
+                    </button>
+                    <button id="loop-btn" disabled="true" class="toolbaar">
+                        <i class="ri-repeat-2-line" id="loop-icon"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+</html>

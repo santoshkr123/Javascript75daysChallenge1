@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Day9onSubmit&FormValue.js"></script>
+    <style>
+        #username-view{
+            color: red;
+        }
+        #password-view{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--colorchange-->
+    <!--
+    <h1 id="h1">Coding Ott</h1>
+    <p id="branch">Powered by Wap Institute</p>
+    <p id="founder">Powered ER.Saurav</ER></p>
+    <input type="color" onchange="changeColor('founder')" id="color-picked">
+    -->
+    <form onsubmit="login(event)">
+        <input type="username" placeholder="@username" id="username">
+        <input type="password" placeholder="password" id="password">
+        <button>Login</button>
+    </form>
+    <h1 id="username-view"></h1>
+    <p id="password-view"></p>
+    
+    
+    
+</body>
+</html>
